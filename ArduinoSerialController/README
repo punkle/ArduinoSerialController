@@ -1,0 +1,18 @@
+The Arduino Serial Controller is library which allows a Arduino sketch receive and execute commands which are read from the HardwareSerial input.
+
+The Controller has been written using the Command pattern design pattern. This means that the Serial Controller is adaptable to adding additional commands.
+
+The following commands are currently available:
+
+- SwitchOnCommand
+- SwitchOffCommand
+
+Please have a look at the sample sketch:
+
+- TestArduinoSerialController.ino
+
+If you would like to create your own commands, simply 
+
+- extend the Command class
+- set the instruction string in the constructor
+- implement the Command::execute(String) funtion (The execute function is what is called when the user enters the instruction.)
