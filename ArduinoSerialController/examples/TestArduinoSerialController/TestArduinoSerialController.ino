@@ -24,6 +24,13 @@ void setup()
 
 	// set the command array
 	controller.setCommandArray(commandArray[0], 2);
+	
+	// print the list of instructions
+	Serial.println("The list of instructions: ");
+	
+    for(int i=0;i<2;i++){
+          Serial.println(commandArray[i]->getInstruction());
+    }
 }
 
 void loop()
