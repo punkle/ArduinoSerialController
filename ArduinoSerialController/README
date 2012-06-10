@@ -1,4 +1,4 @@
-The Arduino Serial Controller is library which allows a Arduino sketch receive and execute commands which are read from the HardwareSerial input.
+The Arduino Serial Controller is a library which allows an Arduino sketch receive and execute commands which are read from the HardwareSerial input.
 
 The Controller has been written using the Command pattern design pattern. This means that the Serial Controller is adaptable to adding additional commands.
 
